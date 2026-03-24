@@ -1,8 +1,12 @@
-module.exports = (req, res) => {
-  res.status(200).json({
-    mensagem: "Olá! Meu primeiro deploy na Vercel!",
-    metodo: req.method,
-    url: req.url,
-    timestamp: new Date().toISOString()
-  });
-};
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.json({ mensagem: "Olá! API funcionando na Vercel!" });
+});
+
+app.get('/teste/:nome', (req, res) => {
+  res.json({ saudacao: `Olá ${req.params.nome}!` });
+});
+
+module.exports = app;
