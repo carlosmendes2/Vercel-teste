@@ -1,19 +1,18 @@
 {
-  "name": "deploys",
+  "name": "vercel-teste",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API com Express e PostgreSQL na Vercel",
+  "main": "api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "nodemon": "^3.1.14",
-    "pg": "^8.20.0"
+    "express": "^4.18.0",
+    "pg": "^8.11.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
