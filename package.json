@@ -1,18 +1,4 @@
 {
-  "name": "vercel-teste",
-  "version": "1.0.0",
-  "description": "API com Express e PostgreSQL na Vercel",
-  "main": "api/index.js",
-  "scripts": {
-    "start": "node api/index.js",
-    "dev": "nodemon api/index.js"
-  },
-  "dependencies": {
-    "express": "^4.18.0",
-    "pg": "^8.11.0",
-    "dotenv": "^17.3.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.14"
-  }
+  "name": "meu-projeto",
+  "version": "1.0.0"
 }
