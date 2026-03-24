@@ -9,4 +9,5 @@ app.get('/teste/:nome', (req, res) => {
   res.json({ saudacao: `Olá ${req.params.nome}!` });
 });
 
+
 module.exports = app;
